@@ -4,13 +4,15 @@
 
 int main(void)
 {
-    string s = get_string();
-    if (s != NULL) 
+    string s = get_string("Input: ");
+    printf("Output:\n");
+
+    if (s != NULL)
     {
         for (int i = 0; i < strlen(s); i++)
         {
             printf("%c\n", s[i]);
         }
     }
-    
+
 }
