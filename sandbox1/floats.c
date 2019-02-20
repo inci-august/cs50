@@ -3,20 +3,13 @@
 
 int main(void)
 {
-  printf("x is ");
-  float x = get_float();
-  
-  printf("y is ");
-  float y = get_float();
-  
-  float z = x + y;
-  printf("sum of x and y is %f\n", z);
-  
-  printf("sum of %f and %f is %f\n", x, y, x + y);
-  
-  printf("%f minus %f is %f\n", x, y, x - y);
-  
-  printf("%f times %f is %f\n", x, y, x * y);
-  
-  printf("%f divided by %f is %f\n", x, y, x / y);
+  // Prompt user for x
+  float x = get_float("x: ");
+
+  // Prompt user for y
+  float y = get_float("y: ");
+
+  // Perform division
+  printf("x / y = %f\n", x / y);   // 0.200000
+  printf("x / y = %.7f\n", x / y); // 0.2000000 (7 decimal places)
 }

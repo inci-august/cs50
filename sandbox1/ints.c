@@ -3,22 +3,16 @@
 
 int main(void)
 {
-  printf("x is ");
-  int x = get_int();
-  
-  printf("y is ");
-  int y = get_int();
-  
-  int z = x + y;
-  printf("sum of x and y is %i\n", z);
-  
-  printf("sum of %i and %i is %i\n", x, y, x + y);
-  
-  printf("%i minus %i is %i\n", x, y, x - y);
-  
-  printf("%i times %i is %i\n", x, y, x * y);
-  
-  printf("%i divided by %i is %i\n", x, y, x / y);
-  
-  printf("remainder of %i divided by %i is %i\n", x, y, x % y);
+  // Prompt user for x
+  int x = get_int("x: ");
+
+  // prompt user for y
+  int y = get_int("y: ");
+
+  // Perform arithmetic
+  printf("x + y = %i\n", x + y);
+  printf("x - y = %i\n", x - y);
+  printf("x * y = %i\n", x * y);
+  printf("x / y = %i\n", x / y);
+  printf("x mod y = %i\n", x % y);
 }
