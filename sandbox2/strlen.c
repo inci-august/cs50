@@ -3,12 +3,12 @@
 
 int main(void)
 {
-    string s = get_string();
+    string s = get_string("Name: ");
     int n = 0;
     while (s[n] != '\0')
     // \0 is the delimeter between strings in memory
     {
         n++;
     }
-    printf("%i\n", n);
+    printf("The length of your name is %i\n", n);
 }

@@ -4,15 +4,16 @@
 
 int main(void)
 {
-    string s = get_string();
+    string s = get_string("Before: ");
+    printf("After: ");
     if (s != NULL)
     {
         for (int i = 0, n = strlen(s); i < n; i++)
         {
             if (s[i] >= 'a' && s[i] <= 'z')
             {
-                printf("%c", s[i] - 32); 
-                // we could've said s[i] - ('a' - 'A') instead of s[i] - 32
+                printf("%c", s[i] - ('a' - 'A'));
+                // we could've said `s[i] - 32` instead of `s[i] - ('a' - 'A')`
             }
             else
             {

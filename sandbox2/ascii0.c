@@ -1,10 +1,16 @@
+// Explicitly casts chars to ints
+
+#include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    for (int i = 65; i < 65 + 26; i++) 
+    string s = get_string("String: ");
+    for (int i = 0; i < strlen(s); i++)
     {
-        // printf("%c is %i\n", (char) i, i);
-        printf("%c is %i\n", i, i);
+        int c = (int) s[i];
+        // You can do `int c = s[i];` & get the same result
+        printf("%c %i\n", s[i], c);
     }
 }
